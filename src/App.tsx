@@ -4,7 +4,8 @@ import "./App.css";
 import ContentSection from "./Components/ContentSection/ContentSection";
 import { ProfileData } from "./Data/DataIndex";
 import TitleSection from "./Components/TitleSection/TitleSection";
-import WorkedWithFor from "./Components/WorkedWithFor/WorkedWithFor";
+import WorkedWithFor from "./Components/WorkedWithForSection/WorkedWithFor";
+import EducationSection from "./Components/EducationSection/EducationSection";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<ContentSection {...ProfileData.past} />
 			<ContentSection {...ProfileData.interests} />
 			<WorkedWithFor />
+			<EducationSection />
 		</div>
 	);
 }
