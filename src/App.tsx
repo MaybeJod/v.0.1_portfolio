@@ -4,6 +4,7 @@ import "./App.css";
 import ContentSection from "./Components/ContentSection/ContentSection";
 import { ProfileData } from "./Data/DataIndex";
 import TitleSection from "./Components/TitleSection/TitleSection";
+import WorkedWithFor from "./Components/WorkedWithFor/WorkedWithFor";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<ContentSection {...ProfileData.help} />
 			<ContentSection {...ProfileData.past} />
 			<ContentSection {...ProfileData.interests} />
+			<WorkedWithFor />
 		</div>
 	);
 }
