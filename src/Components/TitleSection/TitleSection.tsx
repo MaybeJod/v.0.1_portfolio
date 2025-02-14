@@ -17,7 +17,6 @@ export default function TitleSection({
 				<p className="title-section-body-text">{summary}</p>
 				<button>lets chat</button>
 			</div>
-			<p></p>
 		</header>
 	);
 }

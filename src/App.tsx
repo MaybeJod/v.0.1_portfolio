@@ -6,6 +6,7 @@ import { ProfileData } from "./Data/DataIndex";
 import TitleSection from "./Components/TitleSection/TitleSection";
 import WorkedWithFor from "./Components/WorkedWithForSection/WorkedWithFor";
 import EducationSection from "./Components/EducationSection/EducationSection";
+import LetsChat from "./Components/LetsChat/LetsChat";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<ContentSection {...ProfileData.interests} />
 			<WorkedWithFor />
 			<EducationSection />
+			<LetsChat />
 		</div>
 	);
 }
