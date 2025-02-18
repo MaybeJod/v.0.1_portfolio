@@ -1,6 +1,5 @@
-import React from "react";
-import Square from "../../Icons/Square";
 import "./TitleSection.css";
+import JodLogo from "../../Icons/JodLogo";
 
 export default function TitleSection({
 	title,
@@ -11,7 +10,7 @@ export default function TitleSection({
 }) {
 	return (
 		<header>
-			<Square />
+			<JodLogo />
 			<div className="title-section-content">
 				<h1 className="title-section-title">{title}</h1>
 				<p className="title-section-body-text">{summary}</p>
