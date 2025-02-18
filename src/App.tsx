@@ -7,6 +7,7 @@ import TitleSection from "./Components/TitleSection/TitleSection";
 import WorkedWithFor from "./Components/WorkedWithForSection/WorkedWithFor";
 import EducationSection from "./Components/EducationSection/EducationSection";
 import LetsChat from "./Components/LetsChat/LetsChat";
+import FindMe from "./Components/FindMe/FindMe";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<ContentSection {...ProfileData.interests} />
 			<WorkedWithFor />
 			<EducationSection />
+			<FindMe />
 			<LetsChat />
 		</div>
 	);
