@@ -1,7 +1,8 @@
 header {
+	margin-bottom: 3rem;
 	.title-section-svg {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
+		margin-top: 4rem;
+		margin-bottom: 2rem;
 		width: 30dvw;
 	}
 	.title-section-content {
@@ -14,9 +15,7 @@ header {
 			line-height: var(--text-line-height);
 			font-size: 1rem;
 			color: var(--secondary-text-color);
-		}
-
-		button {
+			margin: 1rem 0 1rem 0;
 		}
 	}
 }
