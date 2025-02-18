@@ -1,2 +1,22 @@
-.title-section-svg-color {
+header {
+	.title-section-svg {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		width: 30dvw;
+	}
+	.title-section-content {
+		.title-section-title {
+			font-size: 2rem;
+			font-weight: 100;
+		}
+
+		.title-section-body-text {
+			line-height: var(--text-line-height);
+			font-size: 1rem;
+			color: var(--secondary-text-color);
+		}
+
+		button {
+		}
+	}
 }

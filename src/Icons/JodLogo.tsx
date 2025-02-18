@@ -3,7 +3,7 @@ import React from "react";
 export default function JodLogo() {
 	return (
 		<svg
-			className="title-section-svg-color"
+			className="title-section-svg"
 			viewBox="0 0 250 214"
 			xmlns="http://www.w3.org/2000/svg">
 			<path
