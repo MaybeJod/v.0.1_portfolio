@@ -4,21 +4,22 @@ export const pastSection = {
 	items: [
 		{
 			segments: [
-				{ text: "Head of Design @ " },
-				{ text: "Home", link: "google.com" },
+				{ text: "UX design intern @ " },
+				{ text: "ION Game Design", link: "https://iongamedesign.com/" },
 			],
 		},
 		{
-			segments: [{ text: "Client work @ jod design" }],
-		},
-		{
-			segments: [{ text: "Trying to survive" }],
+			segments: [
+				{ text: "UX design and XR dev intern @ " },
+				{ text: "MediPrep", link: "https://mediprep.se/" },
+			],
 		},
 		{
 			segments: [
+				{ text: "UX and Graphic design intern @ " },
 				{
-					text: "The playlist manager",
-					link: "-playlist-manager.netlify.app",
+					text: "Flemingsberg Science",
+					link: "https://flemingsbergscience.se/en/start_en/",
 				},
 			],
 		},
