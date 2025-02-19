@@ -1,0 +1,45 @@
+/* <section className="content-section-wrapper">
+			<h2 className="section-title">{title}</h2>
+			<ul className="section-content-ul">
+				{items.map((item, index) => (
+					<li key={index}>
+						{item.segments.map((segment, segmentIndex) => (
+							<React.Fragment key={segmentIndex}>
+								{segment.link ? (
+									<a
+										href={segment.link}
+										className="section-content-link"
+										target="_blank"
+										rel="noopener noreferrer">
+										{segment.text}
+									</a>
+								) : (
+									<span className="section-content-link">{segment.text}</span>
+								)}
+							</React.Fragment>
+						))}
+					</li>
+				))}
+			</ul>
+		</section> */
+
+.content-section-wrapper {
+	.section-title {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+		color: var(--secondary-text-color);
+		font-weight: 100;
+	}
+	.section-content-ul {
+		li {
+			margin-left: 1rem;
+			margin-bottom: 0.8rem;
+			.section-content-link-a {
+				color: rgb(184, 184, 184);
+			}
+			.section-content-link-span {
+				color: var(--main-text-color);
+			}
+		}
+	}
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContentSection.css";
 
 type TextSegment = {
 	text: string;
@@ -17,7 +18,7 @@ type SectionProps = {
 
 export default function ContentSection({ id, title, items }: SectionProps) {
 	return (
-		<section className="content-section-wrapper">
+		<section className="content-section-wrapper" id={id}>
 			<h2 className="section-title">{title}</h2>
 			<ul className="section-content-ul">
 				{items.map((item, index) => (
@@ -27,13 +28,15 @@ export default function ContentSection({ id, title, items }: SectionProps) {
 								{segment.link ? (
 									<a
 										href={segment.link}
-										className="section-content-link"
+										className="section-content-link-a"
 										target="_blank"
 										rel="noopener noreferrer">
 										{segment.text}
 									</a>
 								) : (
-									<span className="section-content-link">{segment.text}</span>
+									<span className="section-content-link-span">
+										{segment.text}
+									</span>
 								)}
 							</React.Fragment>
 						))}
