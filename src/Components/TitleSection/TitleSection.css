@@ -1,2 +1,21 @@
-.title-section-svg-color {
+header {
+	margin-bottom: 3rem;
+	.title-section-svg {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		width: 30dvw;
+	}
+	.title-section-content {
+		.title-section-title {
+			font-size: 2rem;
+			font-weight: 100;
+		}
+
+		.title-section-body-text {
+			line-height: var(--text-line-height);
+			font-size: 1rem;
+			color: var(--secondary-text-color);
+			margin: 1rem 0 1rem 0;
+		}
+	}
 }
