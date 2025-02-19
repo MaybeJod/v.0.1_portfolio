@@ -3,24 +3,28 @@ export const interestsSection = {
 	title: "CURRENT INTERESTS",
 	items: [
 		{
-			segments: [
-				{ text: "Head of Design @ " },
-				{ text: "Home", link: "google.com" },
-			],
+			segments: [{ text: "Experimenting with tech" }],
 		},
 		{
-			segments: [{ text: "Client work @ jod design" }],
+			segments: [{ text: "Micro interactions in web apps" }],
 		},
 		{
-			segments: [{ text: "Trying to survive" }],
+			segments: [{ text: "Coding and building personal projects" }],
 		},
 		{
-			segments: [
-				{
-					text: "The playlist manager",
-					link: "-playlist-manager.netlify.app",
-				},
-			],
+			segments: [{ text: "Becoming a badminton champ" }],
+		},
+		{
+			segments: [{ text: "Food enjoyer" }],
+		},
+		{
+			segments: [{ text: "Learning Japanese" }],
+		},
+		{
+			segments: [{ text: "Solving a Rubik's cube under 2 minutes" }],
+		},
+		{
+			segments: [{ text: "VFX in movies and tv shows" }],
 		},
 	],
 };
