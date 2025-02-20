@@ -3,24 +3,16 @@ export const helpSection = {
 	title: "I CAN HELP WITH",
 	items: [
 		{
-			segments: [
-				{ text: "Head of Design @ " },
-				{ text: "Home", link: "google.com" },
-			],
+			segments: [{ text: "Website design and development" }],
 		},
 		{
-			segments: [{ text: "Client work @ jod design" }],
+			segments: [{ text: "UX and interaction design" }],
 		},
 		{
-			segments: [{ text: "Trying to survive" }],
+			segments: [{ text: "Local business websites (Stockholm area)" }],
 		},
 		{
-			segments: [
-				{
-					text: "The playlist manager",
-					link: "-playlist-manager.netlify.app",
-				},
-			],
+			segments: [{ text: "Maximizing shareholder value" }],
 		},
 	],
 };

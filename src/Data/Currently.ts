@@ -4,22 +4,17 @@ export const currentlySection = {
 	items: [
 		{
 			segments: [
-				{ text: "Head of Design @ " },
-				{ text: "Home", link: "google.com" },
+				{ text: "Front end student @ " },
+				{ text: "Hyper Island", link: "https://hyperisland.com/en/" },
 			],
 		},
 		{
-			segments: [{ text: "Client work @ jod design" }],
-		},
-		{
-			segments: [{ text: "Trying to survive" }],
+			segments: [{ text: "Looking for internship" }],
 		},
 		{
 			segments: [
-				{
-					text: "The playlist manager",
-					link: "-playlist-manager.netlify.app",
-				},
+				{ text: "Playing with " },
+				{ text: "Arduinos", link: "https://www.arduino.cc/" },
 			],
 		},
 	],

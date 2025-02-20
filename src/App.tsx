@@ -16,15 +16,17 @@ function App() {
 				title="Jod Wongphayak"
 				summary="Stockholm-based Front end dev and UX designer. Currently focused on bridging design and code. Driven by curiosity, mixing analog and digital media to build digital experiences."
 			/>
-			{/* ... spread operator, it takes all the properties from an object and "spreads them as individual props" */}
-			<ContentSection {...ProfileData.currently} />
-			<ContentSection {...ProfileData.help} />
-			<ContentSection {...ProfileData.past} />
-			<ContentSection {...ProfileData.interests} />
-			<WorkedWithFor />
-			<EducationSection />
-			<FindMe />
-			<LetsChat />
+			<main className="main-section-wrapper">
+				{/* ... spread operator, it takes all the properties from an object and "spreads them as individual props" */}
+				<ContentSection {...ProfileData.currently} />
+				<ContentSection {...ProfileData.help} />
+				<ContentSection {...ProfileData.past} />
+				<ContentSection {...ProfileData.interests} />
+				<WorkedWithFor />
+				<EducationSection />
+				<FindMe />
+				<LetsChat />
+			</main>
 		</div>
 	);
 }

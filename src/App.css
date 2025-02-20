@@ -12,10 +12,20 @@
 	--text-line-height: 1.5rem;
 }
 
+#root {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	min-height: inherit;
+}
+
 body {
 	background-color: var(--main-bg-color);
 	color: var(--main-text-color);
 	padding: 1rem;
-	/* display: flex;
-	flex-direction: column; */
+}
+
+.main-section-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
