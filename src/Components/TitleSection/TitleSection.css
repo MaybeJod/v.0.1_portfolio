@@ -4,6 +4,7 @@ header {
 		margin-top: 4rem;
 		margin-bottom: 2rem;
 		width: 30dvw;
+		fill: var(--main-svg-color);
 	}
 	.title-section-content {
 		.title-section-title {
