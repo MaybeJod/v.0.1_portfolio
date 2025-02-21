@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function KTH_logo_RGB_vit() {
+export default function KTHLogo() {
 	return (
 		<svg
+			className="education-svg kth-svg"
 			id="Layer_1"
 			data-name="Layer 1"
 			xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function HI_Primary_Logotype_White() {
+export default function HIPrimaryLogotypeWhite() {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 731.33 45.43">
+		<svg
+			className="education-svg hi-svg"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 731.33 45.43">
 			<defs></defs>
 			<g id="Layer_2" data-name="Layer 2">
 				<g id="Lager_1" data-name="Lager 1">
