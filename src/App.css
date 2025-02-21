@@ -5,6 +5,7 @@
 
 :root {
 	--main-bg-color: rgb(33, 33, 33);
+	--main-svg-color: #ffffff;
 	/* --secondary-bg-color: ; */
 	--main-text-color: #ffffff;
 	--secondary-text-color: #dddddd;
@@ -30,7 +31,6 @@ body {
 	gap: 2rem;
 }
 
-svg {
+/* svg {
 	fill: #ffffff;
-	width: 200px;
-}
+} */

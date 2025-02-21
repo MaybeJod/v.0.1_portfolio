@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GithubSVG() {
 	return (
-		<svg viewBox="0 0 128 128">
+		<svg className="find-me-svg" viewBox="0 0 128 128">
 			<path
 				fillRule="evenodd"
 				clipRule="evenodd"

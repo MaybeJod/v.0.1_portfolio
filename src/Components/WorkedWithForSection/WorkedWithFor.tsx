@@ -10,10 +10,18 @@ export default function WorkedWithFor() {
 		<section>
 			<h2 className="worked-with-for-title">WORKED WITH/FOR</h2>
 			<div className="worked-with-for-svgs-wrapper">
-				<IonGameDesign />
-				<MediPrepLogo />
-				<FsLogoSvg />
-				<SodertornUniversityLogo />
+				<a href="https://iongamedesign.com/">
+					<IonGameDesign />
+				</a>
+				<a href="https://flemingsbergscience.se/en/start_en/">
+					<FsLogoSvg />
+				</a>
+				<a href="https://mediprep.se/">
+					<MediPrepLogo />
+				</a>
+				<a href="https://www.sh.se/">
+					<SodertornUniversityLogo />
+				</a>
 			</div>
 		</section>
 	);
