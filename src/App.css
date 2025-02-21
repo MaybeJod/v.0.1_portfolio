@@ -29,3 +29,8 @@ body {
 	flex-direction: column;
 	gap: 2rem;
 }
+
+svg {
+	fill: #ffffff;
+	width: 200px;
+}
