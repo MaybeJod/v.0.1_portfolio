@@ -26,5 +26,8 @@ export const interestsSection = {
 		{
 			segments: [{ text: "VFX in movies and tv shows" }],
 		},
+		{
+			segments: [{ text: "Maximizing shareholder value" }],
+		},
 	],
 };

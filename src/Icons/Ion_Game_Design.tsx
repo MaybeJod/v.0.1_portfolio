@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function Ion_Game_Design() {
+export default function IonGameDesign() {
 	return (
 		<svg
+			className="worked-with-svg"
 			version="1.0"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 803.000000 600.000000"
