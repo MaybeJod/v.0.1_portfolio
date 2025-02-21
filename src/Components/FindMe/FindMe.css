@@ -1,0 +1,16 @@
+.find-me-section-title {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+	color: var(--secondary-text-color);
+	font-weight: 100;
+}
+
+.find-me-section-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+	gap: 0.5rem;
+	.find-me-svg {
+		fill: var(--main-svg-color);
+		width: 30px;
+	}
+}
