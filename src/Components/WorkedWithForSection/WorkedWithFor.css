@@ -1,4 +1,18 @@
-.worked-with-svg {
-	fill: #ffffff;
-	width: 200px;
+.worked-with-for-title {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+	color: var(--secondary-text-color);
+	font-weight: 100;
+}
+
+.worked-with-for-svgs-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	.worked-with-svg {
+		fill: #ffffff;
+		width: 120px;
+	}
 }
