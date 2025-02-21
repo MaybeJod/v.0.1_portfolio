@@ -8,9 +8,16 @@ export default function EducationSection() {
 		<section>
 			<h2 className="education-section-title">EDUCATION</h2>
 			<div className="education-section-svgs-wrapper">
-				<HIPrimaryLogotypeWhite />
-				<SodertornUniversityLogo />
-				<KTHLogo />
+				<a href="https://hyperisland.com/en/">
+					<HIPrimaryLogotypeWhite />
+				</a>
+				<a href="https://www.sh.se/">
+					<SodertornUniversityLogo />
+				</a>
+
+				<a href="https://www.kth.se/">
+					<KTHLogo />
+				</a>
 			</div>
 		</section>
 	);
