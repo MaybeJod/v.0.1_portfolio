@@ -58,6 +58,10 @@
 
 		& .section-content-ul {
 			margin-top: 0;
+			& li {
+				margin-left: 0;
+				padding-left: 0;
+			}
 		}
 	}
 }
