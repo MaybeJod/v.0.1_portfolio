@@ -5,7 +5,7 @@ import CodepenSVG from "../../Icons/CodepenSVG";
 
 export default function FindMe() {
 	return (
-		<section>
+		<section className="find-me-section-wrapper">
 			<h2 className="find-me-section-title">FIND ME</h2>
 			<div className="find-me-section-content">
 				<a href="https://github.com/MaybeJod">
