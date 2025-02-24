@@ -11,8 +11,27 @@
 	gap: 1rem;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3rem;
 	.worked-with-svg {
 		fill: var(--main-svg-color);
-		width: 120px;
+		width: 80px;
+	}
+}
+
+@media only screen and (min-width: 810px) {
+	.worked-with-section-wrapper {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 2rem;
+		align-items: flex-start;
+
+		& .worked-with-for-title {
+			margin-top: 0;
+		}
+	}
+	.worked-with-for-svgs-wrapper {
+		.worked-with-svg {
+			width: 120px;
+		}
 	}
 }

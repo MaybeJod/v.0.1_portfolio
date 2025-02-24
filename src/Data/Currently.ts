@@ -13,7 +13,7 @@ export const currentlySection = {
 		},
 		{
 			segments: [
-				{ text: "Playing with " },
+				{ text: "Playing with #" },
 				{ text: "Arduinos", link: "https://www.arduino.cc/" },
 			],
 		},

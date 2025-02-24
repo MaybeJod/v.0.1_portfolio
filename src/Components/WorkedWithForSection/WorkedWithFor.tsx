@@ -7,7 +7,7 @@ import FsLogoSvg from "../../Icons/FsLogoSvg";
 
 export default function WorkedWithFor() {
 	return (
-		<section>
+		<section className="worked-with-section-wrapper">
 			<h2 className="worked-with-for-title">WORKED WITH/FOR</h2>
 			<div className="worked-with-for-svgs-wrapper">
 				<a href="https://iongamedesign.com/">

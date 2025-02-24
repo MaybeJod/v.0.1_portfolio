@@ -21,4 +21,8 @@
 		cursor: pointer;
 		font-size: 14px;
 	}
+	.standard-button:hover {
+		background-color: rgb(150, 150, 150);
+		color: var(--secondary-button-text-color);
+	}
 }

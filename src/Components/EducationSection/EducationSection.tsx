@@ -5,7 +5,7 @@ import KTHLogo from "../../Icons/KTH_logo_RGB_vit";
 
 export default function EducationSection() {
 	return (
-		<section>
+		<section className="education-section-wrapper">
 			<h2 className="education-section-title">EDUCATION</h2>
 			<div className="education-section-svgs-wrapper">
 				<a href="https://hyperisland.com/en/">

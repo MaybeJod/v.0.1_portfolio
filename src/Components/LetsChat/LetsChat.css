@@ -19,3 +19,16 @@
 		color: #1f1f1f;
 	}
 }
+
+@media only screen and (min-width: 810px) {
+	.lets-connect-section-wrapper {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 2rem;
+		align-items: flex-start;
+
+		& .lets-connect-title {
+			margin-top: 0;
+		}
+	}
+}

@@ -9,8 +9,30 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
 	gap: 0.5rem;
+	margin-bottom: 3rem;
 	.find-me-svg {
 		fill: var(--main-svg-color);
 		width: 30px;
+	}
+}
+
+@media only screen and (min-width: 810px) {
+	.find-me-section-wrapper {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 2rem;
+		align-items: flex-start;
+
+		& .find-me-section-title {
+			margin-top: 0;
+		}
+	}
+	.find-me-section-content {
+		width: 300px;
+
+		margin-bottom: 3rem;
+		.find-me-svg {
+			width: 20px;
+		}
 	}
 }
