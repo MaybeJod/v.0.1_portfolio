@@ -21,7 +21,7 @@ export default function TitleSection({
 					<JodLogo className="title-section-svg" />
 					<img
 						src={tempJod}
-						alt="Hovered Image"
+						alt="illustration of jod"
 						className="title-section-img"
 					/>
 				</div>
