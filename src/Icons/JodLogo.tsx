@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function JodLogo() {
+export default function JodLogo({ className }: { className: string }) {
 	return (
 		<svg
-			className="title-section-svg"
+			className={className}
 			viewBox="0 0 250 214"
 			xmlns="http://www.w3.org/2000/svg">
 			<path
