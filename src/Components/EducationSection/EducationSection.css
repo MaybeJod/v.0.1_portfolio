@@ -11,11 +11,32 @@
 	gap: 1rem;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3rem;
 	.education-svg {
 		fill: var(--main-svg-color);
-		width: 120px;
+		width: 80px;
 	}
 	.kth-svg {
 		width: 70px;
+	}
+}
+
+@media only screen and (min-width: 810px) {
+	.education-section-wrapper {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 2rem;
+		align-items: flex-start;
+
+		& .education-section-title {
+			margin-top: 0;
+		}
+	}
+
+	.education-section-svgs-wrapper {
+		padding-left: 1rem;
+		.education-svg {
+			width: 120px;
+		}
 	}
 }
