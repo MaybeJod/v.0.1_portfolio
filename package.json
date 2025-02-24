@@ -2,7 +2,7 @@
 	"name": "v.0.1_portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://maybejod.github.io/v0.1_portfolio",
+	"homepage": "https://maybejod.github.io/v.0.1_portfolio",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
