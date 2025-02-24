@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/static/css/main.bdf3701c.css",
+    "main.js": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/static/js/main.c045f8c9.js",
+    "static/media/temp_jod.jpg": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/static/media/temp_jod.6c563a5fa2a35c51af9f.jpg",
+    "index.html": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/index.html",
+    "main.bdf3701c.css.map": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/static/css/main.bdf3701c.css.map",
+    "main.c045f8c9.js.map": "/MaybeJod/v.0.1_portfolio.io/v0.1_portfolio/static/js/main.c045f8c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdf3701c.css",
+    "static/js/main.c045f8c9.js"
+  ]
+}
