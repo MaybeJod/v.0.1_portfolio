@@ -15,7 +15,7 @@ export default function TitleSection({
 	}
 
 	return (
-		<header>
+		<header className="title-section">
 			<div className="title-section-svg-container">
 				<div className="title-section-svg-wrapper">
 					<JodLogo className="title-section-svg" />
