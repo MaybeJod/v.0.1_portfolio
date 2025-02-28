@@ -55,13 +55,19 @@ export default function Footer() {
 						<hr />
 						<ul>
 							<li>
-								<a href="#">Linkedin</a>
+								<a href="https://www.google.com/" target="_blank">
+									Linkedin
+								</a>
 							</li>
 							<li>
-								<a href="#">Github</a>
+								<a href="https://www.google.com/" target="_blank">
+									Github
+								</a>
 							</li>
 							<li>
-								<a href="#">Instagram</a>
+								<a href="https://www.google.com/" target="_blank">
+									Instagram
+								</a>
 							</li>
 						</ul>
 					</div>
