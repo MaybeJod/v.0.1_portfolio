@@ -1,18 +1,23 @@
-import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
+	const location = useLocation();
+	const isHomePage = location.pathname === "/";
+
 	return (
 		<>
-			<nav>
+			<nav className="landing-page-header-section">
+				<p>@notJod</p>
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/summary">Summary</Link>
+						{isHomePage ? (
+							<Link to="/summary">Summary</Link>
+						) : (
+							<Link to="/">Go Back Home</Link>
+						)}
 					</li>
 				</ul>
+				<p>jodwongphayak@gmail.com</p>
 			</nav>
 
 			<Outlet />
