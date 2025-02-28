@@ -1,3 +1,76 @@
+/* reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+html {
+	/* color-scheme: dark light; */
+	hanging-punctuation: first last;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	font-style: italic;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p {
+	max-width: 75ch;
+	text-wrap: pretty;
+}
+
+button,
+input:is([type="submit"], [type="button"], [type="checkbox"]) {
+	color: inherit;
+	cursor: pointer;
+	letter-spacing: inherit;
+}
+
+input[type="number"] {
+	appearance: normal;
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+table {
+	font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:has(:target) {
+		scroll-behavior: smooth;
+		scroll-padding-top: 3rem;
+	}
+}
+
+/* ------------------------------------------------------ */
+
 :root {
 	--main-white: #ffffff;
 	--main-black: #000000;
@@ -367,7 +440,7 @@ footer {
 						a {
 							font-size: 1.5rem;
 							text-decoration: none;
-							color: var(--main-black);
+							color: var(--main-white);
 						}
 						a:hover {
 							color: #0000ff;
@@ -391,7 +464,7 @@ footer {
 						a {
 							font-size: 1.5rem;
 							text-decoration: none;
-							color: var(--main-black);
+							color: var(--main-white);
 						}
 						a:hover {
 							color: #0000ff;
@@ -432,32 +505,5 @@ footer {
 				}
 			}
 		}
-	}
-}
-
-/* marquee */
-.marquee-wrapper {
-	max-width: 100%;
-	overflow: hidden;
-	position: relative;
-	.marquee {
-		white-space: nowrap;
-		overflow: hidden;
-		display: inline-block;
-		animation: marquee 30s linear infinite;
-		span {
-			display: inline-block;
-			font-size: 3rem;
-			padding-right: 2rem;
-		}
-	}
-}
-
-@keyframes marquee {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
 	}
 }

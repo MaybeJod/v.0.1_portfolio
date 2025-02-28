@@ -79,7 +79,7 @@ export default function Testimonial() {
 							</div>
 							<img
 								src={testimonial.img}
-								alt="client image"
+								alt="client illustration"
 								className="slide-img"
 							/>
 						</div>
