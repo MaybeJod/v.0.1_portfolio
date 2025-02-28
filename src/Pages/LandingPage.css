@@ -281,7 +281,9 @@
 						}
 					}
 					.slide-img {
-						min-width: 50dvw;
+						/* min-width: 50dvw; */
+						width: 100%;
+						border-radius: 500%;
 						height: auto;
 					}
 				}
