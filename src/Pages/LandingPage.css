@@ -295,7 +295,7 @@
 	}
 	#contact {
 		min-height: 100svh;
-		width: 97dvw;
+		/* width: 97dvw; */
 		background-color: var(--main-black);
 		display: flex;
 		flex-direction: column;
