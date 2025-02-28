@@ -1,4 +1,4 @@
-header {
+.title-section {
 	margin-bottom: 3rem;
 
 	& .title-section-svg-container {
@@ -68,7 +68,7 @@ header {
 }
 
 @media only screen and (min-width: 810px) {
-	header {
+	.title-section {
 		display: grid;
 		grid-template-columns: 200px 1fr;
 		gap: 2rem;
