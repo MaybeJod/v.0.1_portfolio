@@ -344,6 +344,7 @@ table {
 							}
 							.slide-button-container {
 								.slide-buttons {
+									color: var(--main-black);
 									font-size: 1.5rem;
 									border-radius: 2rem;
 									padding: 0.5rem;
@@ -382,7 +383,8 @@ table {
 			align-items: center;
 			.contact-heading {
 				text-align: center;
-				font-size: 8rem;
+				font-size: 6rem;
+				margin-bottom: 6rem;
 			}
 			.cta-button {
 				font-size: 3rem;
