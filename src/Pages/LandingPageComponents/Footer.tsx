@@ -25,6 +25,15 @@ export default function Footer() {
 		}
 	}, []);
 
+	const handleScrollTo =
+		(elementId: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+			e.preventDefault();
+			const element = document.getElementById(elementId);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			}
+		};
+
 	return (
 		<footer>
 			<div className="page-container">
@@ -34,19 +43,29 @@ export default function Footer() {
 						<hr />
 						<ul>
 							<li>
-								<a href="#hero">Home</a>
+								<a href="#hero" onClick={handleScrollTo("hero")}>
+									Home
+								</a>
 							</li>
 							<li>
-								<a href="#projects">Projects</a>
+								<a href="#projects" onClick={handleScrollTo("projects")}>
+									Projects
+								</a>
 							</li>
 							<li>
-								<a href="#about">About</a>
+								<a href="#about" onClick={handleScrollTo("about")}>
+									About
+								</a>
 							</li>
 							<li>
-								<a href="#testimonial">Testimonial</a>
+								<a href="#testimonial" onClick={handleScrollTo("testimonial")}>
+									Testimonial
+								</a>
 							</li>
 							<li>
-								<a href="#contact">Contact</a>
+								<a href="#contact" onClick={handleScrollTo("contact")}>
+									Contact
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -82,7 +101,7 @@ export default function Footer() {
 						<span>{sthlmTime}, STHLM</span>
 					</div>
 					<div id="backToTop">
-						<a href="#hero">
+						<a href="#hero" onClick={handleScrollTo("hero")}>
 							<button>&uarr;</button>
 						</a>
 					</div>
