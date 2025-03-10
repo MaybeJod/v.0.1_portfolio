@@ -14,9 +14,12 @@
 }
 
 #root {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: auto 1fr;
-	min-height: inherit;
+	min-height: inherit; */
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
 }
 
 body {
