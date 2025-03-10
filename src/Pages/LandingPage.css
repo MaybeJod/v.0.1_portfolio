@@ -100,14 +100,13 @@ table {
 	}
 }
 
-/* nav {
+nav {
 	position: fixed;
+	display: flex;
 	z-index: 999;
 	bottom: 4vh;
 	left: 50%;
-	width: 380px;
-	height: 53px;
-	padding: 0 25px;
+	padding: 20px 25px;
 	margin-left: -190px;
 	box-sizing: border-box;
 	border: 1px solid #090909;
@@ -124,13 +123,14 @@ table {
 		justify-content: space-between;
 		text-transform: uppercase;
 		padding-left: 0;
+		gap: 1rem;
 		a {
 			text-decoration: none;
 			color: var(--main-black);
 			font-size: 1rem;
 		}
 	}
-} */
+}
 
 .main-content {
 	/* display: flex;
