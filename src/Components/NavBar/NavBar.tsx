@@ -5,7 +5,6 @@ export default function NavBar() {
 	const location = useLocation();
 	const isHomePage = location.pathname === "/" || location.pathname === "";
 
-	// Preserved from your original navigation
 	const navLinks = [
 		{ title: "projects", link: "projects" },
 		{ title: "about", link: "about" },
