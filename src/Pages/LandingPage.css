@@ -616,79 +616,73 @@ footer {
 		#testimonial {
 			min-height: 100svh;
 			margin-top: 3rem;
-
 			.page-container {
 				.testimonial-start {
-					min-height: 40svh;
+					min-height: 20svh;
 					h2 {
-						font-size: 2rem;
+						font-size: 4rem;
 						text-transform: uppercase;
 					}
 					#testimonialHeading {
 						min-width: 100%;
 						display: flex;
-						flex-direction: column;
+						flex-direction: row;
 						justify-content: right;
 						gap: 4rem;
 						#testimonial-left {
 							font-size: 1.5rem;
 							text-transform: uppercase;
-							display: flex;
 						}
 						#testimonial-right {
 							font-size: 1.5rem;
-							/* width: 40%; */
-							/* margin-right: 6rem; */
+							width: 40%;
+							margin-right: 6rem;
 						}
 					}
 				}
 
 				.slideshow-container {
 					.slides {
-						/* display: none; */
-						display: flex;
-						flex-direction: column;
+						display: none;
 						/* display: grid; */
-						grid-template-columns: 1fr;
-						grid-template-rows: 1fr 1fr;
-						align-items: center;
-
+						grid-template-columns: 1fr 1fr;
+						grid-template-rows: none;
 						min-height: 90svh;
-						justify-content: space-between;
+
 						.slideshow-left {
 							display: flex;
 							flex-direction: column;
+							gap: 20rem;
 							.slide-header {
-								margin-top: 2rem;
 								min-height: 90%;
+								line-height: 3.5rem;
+								display: block;
 								h3 {
-									font-size: 1.5rem;
+									font-size: 3rem;
 								}
 								.client-name {
-									font-size: 1rem;
+									font-size: 2rem;
 								}
 								.client-company {
-									font-size: 1rem;
+									font-size: 1.5rem;
 								}
 								.project-tag {
 									span {
-										font-size: 0.6rem;
+										font-size: 1rem;
 										font-style: italic;
 										text-transform: uppercase;
 									}
 								}
 							}
 							.slide-controller {
-								margin-top: 2rem;
 								display: flex;
 								align-items: center;
 								justify-content: space-between;
 								.slide-number {
-									font-size: 1rem;
+									font-size: 1.5rem;
 								}
 								.slide-button-container {
 									.slide-buttons {
-										color: var(--main-black);
 										font-size: 1.5rem;
 										border-radius: 2rem;
 										padding: 0.5rem;
@@ -699,9 +693,7 @@ footer {
 							}
 						}
 						.slide-img {
-							/* min-width: 50dvw; */
-							width: 60%;
-							border-radius: 500%;
+							min-width: 30dvw;
 							height: auto;
 						}
 					}
