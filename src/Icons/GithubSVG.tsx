@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function GithubSVG() {
 	return (
 		<svg className="find-me-svg" viewBox="0 0 128 128">
