@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function JodLogo({ className }: { className: string }) {
 	return (
 		<svg

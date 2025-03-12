@@ -1,4 +1,3 @@
-import React from "react";
 import "./WorkedWithFor.css";
 import IonGameDesign from "../../Icons/Ion_Game_Design";
 import MediPrepLogo from "../../Icons/MediPrep_Logo";
