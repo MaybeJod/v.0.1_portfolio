@@ -1,5 +1,3 @@
-# Tom Johnson inspired
+# Portfolio v.0.1
 
-### Fix
-
-- [ ] fix deployed router
+Summary page inspired by Tom Johnsson
