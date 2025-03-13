@@ -6,7 +6,8 @@ export default function Contact() {
 	function getCurrentTime() {
 		const date = new Date();
 		const localeString = date.toLocaleTimeString();
-		return localeString;
+		const timeArray = localeString.split(":");
+		return `${timeArray[0]}:${timeArray[1]}`;
 	}
 
 	useEffect(() => {
