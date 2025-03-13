@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ProjectsData } from "../../../Data/ProjectsData";
+import "./ProjectPage.css";
 
 const ProjectDetailsPage: React.FC = () => {
 	// get the project slug from the URL parameters
@@ -33,15 +34,6 @@ const ProjectDetailsPage: React.FC = () => {
 				<img src={project.image} alt={project.title} />
 			</div>
 
-			<div className="project-content">
-				<p>{project.description || "test test desc here"}</p>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-					minus.
-				</p>
-			</div>
-
 			{project.link && (
 				<div className="project-links">
 					<a
@@ -54,9 +46,18 @@ const ProjectDetailsPage: React.FC = () => {
 				</div>
 			)}
 
-			<div className="back-link">
-				<Link to="/#projects">← Back to All Projects</Link>
+			<div className="project-content">
+				<p>{project.description || "test test desc here"}</p>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+					minus.
+				</p>
 			</div>
+
+			{/* <div className="back-link">
+				<Link to="/#projects">← Back to All Projects</Link>
+			</div> */}
 		</div>
 	);
 };

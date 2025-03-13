@@ -1,0 +1,56 @@
+.project-details-page {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 2rem;
+	margin-bottom: 3rem;
+	.project-header {
+		color: blue;
+	}
+
+	.project-image {
+		width: 80%;
+
+		object-fit: cover;
+	}
+
+	.project-content {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.project-links {
+		font-size: 2rem;
+		font-weight: 900;
+	}
+}
+
+@media only screen and (min-width: 810px) {
+	.project-details-page {
+		gap: 2rem;
+
+		justify-content: center;
+		margin-bottom: 4rem;
+
+		.project-header {
+			color: blue;
+			text-align: left;
+		}
+
+		.project-image {
+			width: 50%;
+			margin: 0 auto;
+			object-fit: cover;
+		}
+
+		.project-links {
+			font-size: 2rem;
+			font-weight: 900;
+		}
+
+		.project-content {
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+	}
+}
