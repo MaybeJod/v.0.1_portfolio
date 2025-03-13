@@ -1,9 +1,11 @@
 .project-details-page {
+	min-height: 100svh;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 	gap: 2rem;
 	margin-bottom: 3rem;
+	align-items: center;
 	.project-header {
 		color: blue;
 	}
@@ -28,7 +30,7 @@
 @media only screen and (min-width: 810px) {
 	.project-details-page {
 		gap: 2rem;
-
+		align-items: normal;
 		justify-content: center;
 		margin-bottom: 4rem;
 
