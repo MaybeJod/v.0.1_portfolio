@@ -1,5 +1,3 @@
-import tempJod from "../../Icons/temp_jod.jpg";
-
 export default function About() {
 	return (
 		<section id="about">
@@ -14,6 +12,7 @@ export default function About() {
 				</h2>
 				<div className="about-card">
 					<div className="about-text">
+						<p>(ABOUT ME)</p>
 						<p>
 							Hi! I'm Jod — a Designer, a Developer, and a professional
 							certified expert at Winging It. I combine clean design, solid
@@ -31,7 +30,7 @@ export default function About() {
 						</p>
 					</div>
 					<img
-						src={tempJod}
+						src="images/jod/temp_jod.jpg"
 						alt="profile illustration of jod"
 						className="about-img"
 					/>

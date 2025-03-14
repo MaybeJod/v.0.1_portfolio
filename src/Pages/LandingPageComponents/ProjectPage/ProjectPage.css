@@ -1,0 +1,432 @@
+.project-details-page {
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	gap: 2.5rem;
+	margin-bottom: 3rem;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.project-header {
+	width: 100%;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.project-header h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	color: var(--main-white);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.project-tags {
+	color: var(--main-white);
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+	font-style: italic;
+}
+
+.project-image {
+	width: 90%;
+	border-radius: 8px;
+	overflow: hidden;
+	height: 70%;
+	object-fit: cover;
+}
+
+.project-links-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 90%;
+	align-items: center;
+}
+
+.project-links {
+	width: 100%;
+	text-align: center;
+}
+
+.external-link-button {
+	display: inline-block;
+	padding: 0.8rem 1.5rem;
+	background-color: #3a3a3a;
+	color: white;
+	text-decoration: none;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+	width: 80%;
+	text-align: center;
+}
+
+.external-link-button:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-content {
+	font-size: 1rem;
+	line-height: 1.7rem;
+	color: var(--main-white);
+	width: 90%;
+}
+
+.project-content p {
+	margin-bottom: 1.5rem;
+}
+
+.project-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 70vh;
+	text-align: center;
+	padding: 2rem;
+}
+
+/* Technologies section */
+.technologies {
+	width: 90%;
+	margin-bottom: 4rem;
+}
+
+.technologies h3 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	color: var(--main-white);
+}
+
+.tech-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tech-item {
+	background-color: #f5f5f5;
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+/* Add these styles to your ProjectPage.css file */
+.project-description {
+	margin: 2rem 0;
+}
+
+.description-heading {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.description-paragraph {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.description-list {
+	list-style-type: disc;
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.description-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.description-sub-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.indented {
+	margin-left: 1.5rem;
+	list-style-type: circle;
+}
+
+/* Add these styles to your ProjectPage.css file */
+
+/* Project description styles */
+.project-description {
+	margin: 2rem 0;
+}
+
+.description-heading {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.description-paragraph {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.description-list {
+	list-style-type: disc;
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.description-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.description-sub-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.indented {
+	margin-left: 1.5rem;
+	list-style-type: circle;
+}
+
+/* Image styles */
+.project-hero-image {
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-hero-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.project-hero-image img:hover {
+	transform: scale(1.02);
+}
+
+.project-image-container {
+	margin: 2rem 0;
+	text-align: center;
+}
+
+.project-image-container.align-left {
+	text-align: left;
+}
+
+.project-image-container.align-right {
+	text-align: right;
+}
+
+.project-content-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-content-image:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+	margin-top: 0.75rem;
+	font-size: 0.9rem;
+	color: #666;
+	font-style: italic;
+}
+
+/* Gallery styles */
+.additional-images-section {
+	margin: 3rem 0;
+}
+
+.gallery-title {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin: 1.5rem 0;
+}
+
+.gallery-item {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	cursor: pointer;
+}
+
+/* Image modal for enlarged view */
+.image-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.image-modal-content {
+	max-width: 90%;
+	max-height: 90%;
+	position: relative;
+}
+
+.image-modal-content img {
+	max-width: 100%;
+	max-height: 90vh;
+	display: block;
+	border-radius: 4px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 810px) {
+	.project-details-page {
+		padding: 2rem 4rem;
+		gap: 3rem;
+		align-items: normal;
+		margin-bottom: 5rem;
+	}
+
+	.project-header {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.project-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.project-image {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.project-links-container {
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.project-links {
+		width: auto;
+	}
+
+	.external-link-button {
+		width: auto;
+		padding: 0.8rem 2rem;
+	}
+
+	.project-content {
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	}
+
+	.technologies {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.tech-list {
+		gap: 0.8rem;
+	}
+
+	.image-gallery {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.gallery-item img {
+		height: 150px;
+	}
+}
+
+/* 
+@media only screen and (min-width: 1200px) {
+	.project-details-page {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header header"
+			"image content"
+			"links content"
+			"tech tech";
+		align-items: start;
+	}
+
+	.project-header {
+		grid-area: header;
+	}
+
+	.project-image {
+		grid-area: image;
+		width: 90%;
+		margin: 0;
+	}
+
+	.project-links-container {
+		grid-area: links;
+		justify-content: flex-start;
+		padding-left: 5%;
+	}
+
+	.project-content {
+		grid-area: content;
+		width: 90%;
+		margin: 0;
+	}
+
+	.technologies {
+		grid-area: tech;
+		width: 90%;
+		margin: 2rem auto 0;
+	}
+} */

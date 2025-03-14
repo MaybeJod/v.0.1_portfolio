@@ -198,7 +198,8 @@ nav {
 					}
 					img {
 						width: 100%;
-						height: auto;
+						height: 300px;
+						object-fit: cover;
 						transition-duration: 0.4s;
 					}
 					hr {
@@ -214,6 +215,22 @@ nav {
 						margin: 0;
 					}
 				}
+			}
+			.more-project-link {
+				font-size: 1rem;
+				font-weight: 700;
+				text-decoration: none;
+				color: var(--main-black);
+				background-color: var(--main-white);
+				border-radius: 20rem;
+				padding: 0.5rem 1rem;
+				display: block;
+				text-align: center;
+				margin-top: 3rem;
+			}
+			.more-project-link:hover {
+				background-color: var(--main-black);
+				color: var(--main-white);
 			}
 		}
 	}
@@ -299,6 +316,7 @@ nav {
 					flex-direction: column;
 					justify-content: right;
 					gap: 4rem;
+					margin-bottom: 2rem;
 					#testimonial-left {
 						font-size: 1.5rem;
 						text-transform: uppercase;
@@ -415,7 +433,7 @@ nav {
 				display: none;
 			}
 			.cta-button:hover:before {
-				content: "Yes!";
+				content: "please ;)";
 			}
 			.cta-button:hover {
 				background-color: var(--main-black);
@@ -444,6 +462,10 @@ footer {
 		#footerTop {
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			margin-bottom: 3rem;
 			#footerMenu {
 				h3 {
 					font-size: 2rem;
@@ -593,6 +615,66 @@ footer {
 				}
 			}
 		}
+		#projects {
+			min-height: 100svh;
+			margin-bottom: 3rem;
+			.page-container {
+				.projects-heading {
+					margin-bottom: 2rem;
+					font-size: 3rem;
+				}
+				.grid-container {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+					gap: 1rem;
+					justify-content: center;
+					align-items: center;
+					.card {
+						cursor: pointer;
+						display: flex;
+						flex-direction: column;
+						height: 100%;
+						a {
+							text-decoration: none;
+							color: var(--main-white);
+						}
+						:hover img {
+							border-radius: 50%;
+							transition-duration: 0.4s;
+						}
+						.project-number {
+							color: var(--main-white);
+						}
+						img {
+							width: 100%;
+							height: 400px;
+							object-fit: cover;
+							transition-duration: 0.4s;
+						}
+						hr {
+							border: 0.5px solid var(--main-white);
+						}
+						.project-tags {
+							text-transform: uppercase;
+							font-size: 0.8rem;
+						}
+						.project-title {
+							text-transform: uppercase;
+							font-size: 2rem;
+							margin: 0;
+						}
+					}
+				}
+				.more-project-link {
+					font-size: 1rem;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 50%;
+					margin-top: 10rem;
+				}
+			}
+		}
 
 		#about {
 			.page-container {
@@ -616,6 +698,7 @@ footer {
 			.page-container {
 				.testimonial-start {
 					min-height: 20svh;
+
 					h2 {
 						font-size: 3rem;
 						text-transform: uppercase;
@@ -626,11 +709,15 @@ footer {
 						flex-direction: row;
 						justify-content: right;
 						gap: 4rem;
+
+						margin-bottom: 3rem;
 						#testimonial-left {
+							margin-top: 2rem;
 							font-size: 1.5rem;
 							text-transform: uppercase;
 						}
 						#testimonial-right {
+							margin-top: 2rem;
 							font-size: 1.5rem;
 							width: 40%;
 							margin-right: 6rem;
@@ -714,6 +801,7 @@ footer {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+
 				align-items: center;
 				.contact-heading {
 					text-align: center;
@@ -727,28 +815,34 @@ footer {
 					border-radius: 80px;
 					padding: 1rem;
 					border-style: none;
-					/* width: 30rem; */
+					/* width: 10%; */
 					border-right: 20px solid #1f61eb;
 					border-bottom-right-radius: 4px 3px;
 				}
 				.cta-button:hover span {
 					display: none;
 				}
-				.cta-button:hover:before {
-					content: "Yes!";
-				}
+
 				.cta-button:hover {
-					background-color: var(--main-black);
-					border-right: 20px solid var(--main-black);
+					font-size: 1rem;
+					color: var(--main-white);
+					background-color: #1f61eb;
+					border-radius: 80px;
+					padding: 1rem;
+					border-style: none;
+					/* width: 10%; */
+					border-right: 20px solid #1f61eb;
+					border-bottom-right-radius: 4px 3px;
 				}
 				.read {
-					margin-top: 0.5rem;
+					/* margin-top: 0.5rem; */
 					/* font-size: 1.5rem; */
-					font-size: 1rem;
+					/* font-size: 1rem; */
 					/* width: 30rem; */
-					width: 10rem;
+					/* width: 10rem; */
 					text-align: right;
 					color: #9b9b9b;
+					margin: 0.5rem;
 				}
 			}
 		}
@@ -767,12 +861,15 @@ footer {
 			#footerTop {
 				display: flex;
 				justify-content: space-between;
+				flex-direction: row;
+				margin-bottom: 0rem;
+				align-items: normal;
 				#footerMenu {
 					h3 {
 						font-size: 2rem;
 					}
 					hr {
-						width: 40dvw;
+						width: 30dvw;
 					}
 					ul {
 						padding-left: 0;
