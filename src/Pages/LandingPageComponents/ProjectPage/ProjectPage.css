@@ -2,57 +2,238 @@
 	min-height: 100svh;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
-	gap: 2rem;
+	padding: 1.5rem;
+	gap: 2.5rem;
 	margin-bottom: 3rem;
 	align-items: center;
-	.project-header {
-		color: blue;
-	}
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
-	.project-image {
-		width: 80%;
+.project-header {
+	width: 100%;
+	text-align: center;
+	margin-top: 1.5rem;
+}
 
-		object-fit: cover;
-	}
+.project-header h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	color: var(--main-white);
+	text-transform: uppercase;
+	font-weight: 700;
+}
 
-	.project-content {
-		font-size: 1rem;
-		line-height: 1.5rem;
-	}
+.project-tags {
+	color: var(--main-white);
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+	font-style: italic;
+}
 
-	.project-links {
-		font-size: 2rem;
-		font-weight: 900;
-	}
+.project-image {
+	width: 90%;
+	border-radius: 8px;
+	overflow: hidden;
+	height: 70%;
+	object-fit: cover;
+}
+
+.project-links-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 90%;
+	align-items: center;
+}
+
+.project-links {
+	width: 100%;
+	text-align: center;
+}
+
+.external-link-button {
+	display: inline-block;
+	padding: 0.8rem 1.5rem;
+	background-color: #3a3a3a;
+	color: white;
+	text-decoration: none;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+	width: 80%;
+	text-align: center;
+}
+
+.external-link-button:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-content {
+	font-size: 1rem;
+	line-height: 1.7rem;
+	color: var(--main-white);
+	width: 90%;
+}
+
+.project-content p {
+	margin-bottom: 1.5rem;
+}
+
+.project-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 70vh;
+	text-align: center;
+	padding: 2rem;
+}
+
+.back-link {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.back-link a {
+	display: inline-flex;
+	align-items: center;
+	color: #555;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.back-link a:hover {
+	color: #222;
+}
+
+.back-link a::before {
+	content: "←";
+	margin-right: 0.5rem;
+}
+
+/* Technologies section */
+.technologies {
+	width: 90%;
+	margin-bottom: 4rem;
+}
+
+.technologies h3 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	color: var(--main-white);
+}
+
+.tech-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tech-item {
+	background-color: #f5f5f5;
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	font-size: 0.9rem;
+	color: #555;
 }
 
 @media only screen and (min-width: 810px) {
 	.project-details-page {
-		gap: 2rem;
+		padding: 2rem 4rem;
+		gap: 3rem;
 		align-items: normal;
+		margin-bottom: 5rem;
+	}
+
+	.project-header {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.project-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.project-image {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.project-links-container {
+		flex-direction: row;
 		justify-content: center;
-		margin-bottom: 4rem;
+		width: 100%;
+	}
 
-		.project-header {
-			color: blue;
-			text-align: left;
-		}
+	.project-links {
+		width: auto;
+	}
 
-		.project-image {
-			width: 50%;
-			margin: 0 auto;
-			object-fit: cover;
-		}
+	.external-link-button {
+		width: auto;
+		padding: 0.8rem 2rem;
+	}
 
-		.project-links {
-			font-size: 2rem;
-			font-weight: 900;
-		}
+	.project-content {
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	}
 
-		.project-content {
-			font-size: 1rem;
-			line-height: 1.5rem;
-		}
+	.technologies {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.tech-list {
+		gap: 0.8rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.project-details-page {
+		padding: 3rem 6rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header header"
+			"image content"
+			"links content"
+			"tech tech";
+		align-items: start;
+	}
+
+	.project-header {
+		grid-area: header;
+	}
+
+	.project-image {
+		grid-area: image;
+		width: 90%;
+		margin: 0;
+	}
+
+	.project-links-container {
+		grid-area: links;
+		justify-content: flex-start;
+		padding-left: 5%;
+	}
+
+	.project-content {
+		grid-area: content;
+		width: 90%;
+		margin: 0;
+	}
+
+	.technologies {
+		grid-area: tech;
+		width: 90%;
+		margin: 2rem auto 0;
 	}
 }
