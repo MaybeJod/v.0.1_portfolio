@@ -14,6 +14,7 @@ export default function About() {
 				</h2>
 				<div className="about-card">
 					<div className="about-text">
+						<p>(ABOUT ME)</p>
 						<p>
 							Hi! I'm Jod — a Designer, a Developer, and a professional
 							certified expert at Winging It. I combine clean design, solid
