@@ -23,6 +23,12 @@ const Projects: React.FC = () => {
 						</article>
 					))}
 				</div>
+				<a
+					href="https://github.com/MaybeJod"
+					className="more-project-link"
+					target="_blank">
+					More project at github
+				</a>
 			</div>
 		</section>
 	);
