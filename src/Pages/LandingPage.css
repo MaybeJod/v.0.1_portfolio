@@ -461,6 +461,10 @@ footer {
 		#footerTop {
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			margin-bottom: 3rem;
 			#footerMenu {
 				h3 {
 					font-size: 2rem;
@@ -844,12 +848,15 @@ footer {
 			#footerTop {
 				display: flex;
 				justify-content: space-between;
+				flex-direction: row;
+				margin-bottom: 0rem;
+				align-items: normal;
 				#footerMenu {
 					h3 {
 						font-size: 2rem;
 					}
 					hr {
-						width: 40dvw;
+						width: 30dvw;
 					}
 					ul {
 						padding-left: 0;
