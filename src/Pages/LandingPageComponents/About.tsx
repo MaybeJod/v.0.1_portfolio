@@ -1,5 +1,3 @@
-import tempJod from "../../Icons/temp_jod.jpg";
-
 export default function About() {
 	return (
 		<section id="about">
@@ -32,7 +30,7 @@ export default function About() {
 						</p>
 					</div>
 					<img
-						src={tempJod}
+						src="images/jod/temp_jod.jpg"
 						alt="profile illustration of jod"
 						className="about-img"
 					/>

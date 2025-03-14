@@ -1,5 +1,3 @@
-import tempJod from "../Icons/temp_jod.jpg";
-
 interface Testimonial {
 	clientName: string;
 	clientCompany: string;
@@ -24,13 +22,13 @@ export const testimonials: Testimonial[] = [
 		"A cool company",
 		"Jod is phenomenal. An absolute pleasure to work with!",
 		["web dev", "web design", "seo"],
-		tempJod
+		"/images/jod/temp_jod.jpg"
 	),
 	testimonial(
 		"DefinitelyNotJod",
 		"Company Name",
 		"Beyond standards, Jod grasped our vision and brought it to life brilliantly.",
 		["web dev", "web design"],
-		tempJod
+		"/images/jod/temp_jod.jpg"
 	),
 ];

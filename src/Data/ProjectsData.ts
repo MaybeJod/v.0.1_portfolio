@@ -57,7 +57,7 @@ export const ProjectsData: Project[] = [
 		title: "V.0.1 Portfolio",
 		tag: ["Web Development", "Web Design"],
 		technologies: ["JavaScript", "TypeScript", "React"],
-		image: jod,
+		image: "/images/jod/temp_jod.jpg",
 		previewLink: "https://github.com/MaybeJod/v.0.1_portfolio",
 		githubLink: "google.com",
 		description: "lorem10",
@@ -68,7 +68,7 @@ export const ProjectsData: Project[] = [
 		title: "playlist manager",
 		tag: ["Web Development", "SEO"],
 		technologies: ["JavaScript", "React", "CSS"],
-		image: "public/images/projectImg/PlaylistManagerIndex.jpeg",
+		image: "images/projectImg/PlaylistManagerIndex.jpeg",
 		previewLink: "https://the-playlist-manager.netlify.app/",
 		githubLink: "https://github.com/antxhan/playlist-manager",
 		description: createDescription([
@@ -123,22 +123,22 @@ export const ProjectsData: Project[] = [
 				content: "Snapshots of the project (click to enlarge)",
 				images: [
 					{
-						url: "public/images/projectImg/PlaylistManagerIndex.jpeg",
+						url: "images/projectImg/PlaylistManagerIndex.jpeg",
 						alt: "home",
 						caption: "Login",
 					},
 					{
-						url: "public/images/projectImg/PlaylistManagerPlaylistGrid.jpeg",
+						url: "images/projectImg/PlaylistManagerPlaylistGrid.jpeg",
 						alt: "User playlists",
 						caption: "Users playlists",
 					},
 					{
-						url: "public/images/projectImg/PlaylistManagerMyPlaylist.jpeg",
+						url: "/images/projectImg/PlaylistManagerMyPlaylist.jpeg",
 						alt: "Inside user playlists",
 						caption: "inside users playlists",
 					},
 					{
-						url: "public/images/projectImg/PlaylistManagerForYou.jpeg",
+						url: "/images/projectImg/PlaylistManagerForYou.jpeg",
 						alt: "Personalized Recommendations",
 						caption: "Personalized Recommendations",
 					},

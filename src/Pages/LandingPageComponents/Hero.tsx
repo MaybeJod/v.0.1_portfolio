@@ -1,5 +1,3 @@
-import tempJod from "../../Icons/temp_jod.jpg";
-
 export default function Hero() {
 	return (
 		<section id="hero">
@@ -7,7 +5,11 @@ export default function Hero() {
 				<h1>jod wongphayak</h1>
 				<div className="hero-text-and-img">
 					<h2>Front end Developer & UX Designer</h2>
-					<img src={tempJod} alt="illustration of jod" id="heroImg" />
+					<img
+						src="images/jod/temp_jod.jpg"
+						alt="illustration of jod"
+						id="heroImg"
+					/>
 				</div>
 			</div>
 		</section>
