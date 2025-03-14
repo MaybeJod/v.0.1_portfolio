@@ -1,5 +1,3 @@
-import jod from "../Icons/temp_jod.jpg";
-
 export interface ProjectImage {
 	url: string;
 	alt: string;
