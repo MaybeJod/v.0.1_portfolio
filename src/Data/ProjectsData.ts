@@ -1,61 +1,161 @@
 import jod from "../Icons/temp_jod.jpg";
 
+export interface ProjectImage {
+	url: string;
+	alt: string;
+	caption?: string;
+}
+
+export interface DescriptionItem {
+	type:
+		| "heading"
+		| "paragraph"
+		| "list-item"
+		| "sub-list-item"
+		| "image"
+		| "image-gallery";
+	content: string;
+	imageUrl?: string;
+	images?: ProjectImage[];
+	alignment?: "left" | "center" | "right";
+}
+
+// Support both structured descriptions and backwards compatibility
+export type ProjectDescription = DescriptionItem[] | string | string[];
+
 interface Project {
 	title: string;
 	tag: string[];
 	technologies: string[];
 	image: string;
+	additionalImages?: ProjectImage[];
 	previewLink: string;
 	githubLink: string;
-	description: string;
+	description: ProjectDescription;
 }
 
-const project = (
-	title: string,
-	tag: string[],
-	technologies: string[],
-	image: string,
-	previewLink: string,
-	githubLink: string,
-	description: string
-): Project => {
-	return {
-		title,
-		tag,
-		technologies,
-		image,
-		previewLink,
-		githubLink,
-		description,
-	};
+// Helper function to create description items
+const createDescription = (
+	items: (
+		| {
+				type: "heading" | "paragraph" | "list-item" | "sub-list-item";
+				content: string;
+		  }
+		| {
+				type: "image" | "image-gallery";
+				content: string;
+				images: ProjectImage[]; // Allow images array for galleries
+		  }
+	)[]
+): DescriptionItem[] => {
+	return items;
 };
 
 export const ProjectsData: Project[] = [
-	project(
-		"V.0.1 Portfolio",
-		["Web Development", "Web Design"],
-		["JavaScript, TypeScript, React"],
-		jod,
-		"https://github.com/MaybeJod/v.0.1_portfolio",
-		"google.com",
-		"lorem10"
-	),
-	project(
-		"playlist manager",
-		["Web Development", "SEO"],
-		["JavaScript, TypeScript, React"],
-		"https://images.unsplash.com/photo-1730121108301-65fe6cefb48d?q=80&w=3263&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"https://github.com/antxhan/playlist-manager",
-		"google.com",
-		"lorem11"
-	),
-	project(
-		"e-store",
-		["Web Development"],
-		["JavaScript, TypeScript, React"],
-		"https://images.unsplash.com/photo-1730121108301-65fe6cefb48d?q=80&w=3263&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"https://github.com/MaybeJod/e-store",
-		"google.com",
-		"lorem12"
-	),
+	// Project 1: Simple string description (for backwards compatibility)
+	{
+		title: "V.0.1 Portfolio",
+		tag: ["Web Development", "Web Design"],
+		technologies: ["JavaScript", "TypeScript", "React"],
+		image: jod,
+		previewLink: "https://github.com/MaybeJod/v.0.1_portfolio",
+		githubLink: "google.com",
+		description: "lorem10",
+	},
+
+	// Project 2: Structured description for playlist manager
+	{
+		title: "playlist manager",
+		tag: ["Web Development", "SEO"],
+		technologies: ["JavaScript", "React", "CSS"],
+		image: "public/images/projectImg/PlaylistManagerIndex.jpeg",
+		previewLink: "https://the-playlist-manager.netlify.app/",
+		githubLink: "https://github.com/antxhan/playlist-manager",
+		description: createDescription([
+			{ type: "heading", content: "Description" },
+			{
+				type: "paragraph",
+				content:
+					"This project involves building a React web application that integrates with the Spotify API, allowing users to seamlessly manage their playlists and explore music. The primary goal is to provide an interactive, user-friendly interface that enhances the music experience by integrating playlist management, discovery, and playback into one seamless app.",
+			},
+			{ type: "heading", content: "Features" },
+			{
+				type: "list-item",
+				content: "Authentication: Log in with Spotify to access user data.",
+			},
+			{
+				type: "list-item",
+				content:
+					"Routing: Implemented using React Router for smooth navigation.",
+			},
+			{
+				type: "list-item",
+				content:
+					"Spotify Data Integration: Fetch playlists, tracks, and recommendations directly from Spotify.",
+			},
+			{ type: "list-item", content: "Playlist Management:" },
+			{ type: "sub-list-item", content: "Create, edit, and delete playlists." },
+			{
+				type: "sub-list-item",
+				content: "Add favorite tracks when creating a playlist.",
+			},
+			{ type: "list-item", content: "Music Playback" },
+			{
+				type: "sub-list-item",
+				content: "Play and pause music using the Spotify Web Playback SDK.",
+			},
+			{
+				type: "sub-list-item",
+				content: "Keyboard shortcuts: Space to play/pause, M to mute/unmute.",
+			},
+			{
+				type: "list-item",
+				content:
+					"Search Functionality: Find Spotify playlists based on keywords.",
+			},
+			{
+				type: "list-item",
+				content:
+					"Personalized Recommendations: Get suggested playlists based on favorite genres.",
+			},
+			{
+				type: "image-gallery",
+				content: "Snapshots of the project (click to enlarge)",
+				images: [
+					{
+						url: "public/images/projectImg/PlaylistManagerIndex.jpeg",
+						alt: "home",
+						caption: "Login",
+					},
+					{
+						url: "public/images/projectImg/PlaylistManagerPlaylistGrid.jpeg",
+						alt: "User playlists",
+						caption: "Users playlists",
+					},
+					{
+						url: "public/images/projectImg/PlaylistManagerMyPlaylist.jpeg",
+						alt: "Inside user playlists",
+						caption: "inside users playlists",
+					},
+					{
+						url: "public/images/projectImg/PlaylistManagerForYou.jpeg",
+						alt: "Personalized Recommendations",
+						caption: "Personalized Recommendations",
+					},
+				],
+			},
+		]),
+	},
+
+	// Project 3: Using string array (for backwards compatibility)
+	{
+		title: "e-store",
+		tag: ["Web Development", "SEO"],
+		technologies: ["JavaScript", "TypeScript", "React"],
+		image:
+			"https://images.unsplash.com/photo-1730121108301-65fe6cefb48d?q=80&w=3263&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		previewLink: "https://maybejod.github.io/e-store/",
+		githubLink: "https://github.com/MaybeJod/e-store",
+		description: ["lorem 12", "lorem 21"],
+	},
 ];

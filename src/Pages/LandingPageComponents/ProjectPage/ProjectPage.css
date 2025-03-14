@@ -93,29 +93,6 @@
 	padding: 2rem;
 }
 
-.back-link {
-	margin-top: 2rem;
-	text-align: center;
-}
-
-.back-link a {
-	display: inline-flex;
-	align-items: center;
-	color: #555;
-	text-decoration: none;
-	font-weight: 500;
-	transition: color 0.2s;
-}
-
-.back-link a:hover {
-	color: #222;
-}
-
-.back-link a::before {
-	content: "←";
-	margin-right: 0.5rem;
-}
-
 /* Technologies section */
 .technologies {
 	width: 90%;
@@ -140,6 +117,214 @@
 	border-radius: 50px;
 	font-size: 0.9rem;
 	color: #555;
+}
+
+/* Add these styles to your ProjectPage.css file */
+.project-description {
+	margin: 2rem 0;
+}
+
+.description-heading {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.description-paragraph {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.description-list {
+	list-style-type: disc;
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.description-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.description-sub-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.indented {
+	margin-left: 1.5rem;
+	list-style-type: circle;
+}
+
+/* Add these styles to your ProjectPage.css file */
+
+/* Project description styles */
+.project-description {
+	margin: 2rem 0;
+}
+
+.description-heading {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.description-paragraph {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.description-list {
+	list-style-type: disc;
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.description-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.description-sub-list-item {
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.indented {
+	margin-left: 1.5rem;
+	list-style-type: circle;
+}
+
+/* Image styles */
+.project-hero-image {
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-hero-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.project-hero-image img:hover {
+	transform: scale(1.02);
+}
+
+.project-image-container {
+	margin: 2rem 0;
+	text-align: center;
+}
+
+.project-image-container.align-left {
+	text-align: left;
+}
+
+.project-image-container.align-right {
+	text-align: right;
+}
+
+.project-content-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-content-image:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+	margin-top: 0.75rem;
+	font-size: 0.9rem;
+	color: #666;
+	font-style: italic;
+}
+
+/* Gallery styles */
+.additional-images-section {
+	margin: 3rem 0;
+}
+
+.gallery-title {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin: 1.5rem 0;
+}
+
+.gallery-item {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	cursor: pointer;
+}
+
+/* Image modal for enlarged view */
+.image-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.image-modal-content {
+	max-width: 90%;
+	max-height: 90%;
+	position: relative;
+}
+
+.image-modal-content img {
+	max-width: 100%;
+	max-height: 90vh;
+	display: block;
+	border-radius: 4px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 810px) {
@@ -194,11 +379,19 @@
 	.tech-list {
 		gap: 0.8rem;
 	}
+
+	.image-gallery {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.gallery-item img {
+		height: 150px;
+	}
 }
 
+/* 
 @media only screen and (min-width: 1200px) {
 	.project-details-page {
-		padding: 3rem 6rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas:
@@ -236,4 +429,4 @@
 		width: 90%;
 		margin: 2rem auto 0;
 	}
-}
+} */
