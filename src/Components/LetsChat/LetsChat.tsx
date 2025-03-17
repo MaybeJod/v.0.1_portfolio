@@ -1,5 +1,5 @@
 import "./LetsChat.css";
-import StandardButton from "../StandardButton/StandardButton";
+import CalEmbed from "../CalEmbed/CalEmbed";
 
 export default function LetsChat() {
 	function handleClick() {
@@ -17,13 +17,7 @@ export default function LetsChat() {
 					Pick a 15 minute slot, give me a brief intro on what you're looking
 					for, and let's chat.
 				</p>
-				<StandardButton
-					className="lets-connect-section-button"
-					children="Pick a time"
-					ariaLabel="Lets connect section button"
-					onClick={handleClick}
-					tabIndex={0}
-				/>
+				<CalEmbed />
 			</div>
 		</section>
 	);
