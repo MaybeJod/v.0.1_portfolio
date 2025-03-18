@@ -2,9 +2,6 @@ import "./LetsChat.css";
 import CalEmbed from "../CalEmbed/CalEmbed";
 
 export default function LetsChat() {
-	function handleClick() {
-		console.log("hello");
-	}
 	return (
 		<section className="lets-connect-section-wrapper">
 			<h2 className="lets-connect-title">LETS CONNECT</h2>
