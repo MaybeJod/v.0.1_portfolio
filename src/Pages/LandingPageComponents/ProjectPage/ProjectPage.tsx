@@ -156,7 +156,7 @@ const ProjectDetailsPage: React.FC = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="external-link-button">
-						View Live
+						Live URL
 					</a>
 				)}
 				{project.githubLink && (

@@ -64,7 +64,7 @@ export const ProjectsData: Project[] = [
 	// Project 2: Structured description for playlist manager
 	{
 		title: "playlist manager",
-		tag: ["Web Development", "SEO"],
+		tag: ["Web Dev", "React", "API", "Accessibility"],
 		technologies: ["JavaScript", "React", "CSS"],
 		image: "images/projectImg/PlaylistManagerIndex.jpeg",
 		previewLink: "https://the-playlist-manager.netlify.app/",
@@ -74,7 +74,7 @@ export const ProjectsData: Project[] = [
 			{
 				type: "paragraph",
 				content:
-					"This project involves building a React web application that integrates with the Spotify API, allowing users to seamlessly manage their playlists and explore music. The primary goal is to provide an interactive, user-friendly interface that enhances the music experience by integrating playlist management, discovery, and playback into one seamless app.",
+					"This group project involves building a React web application that integrates with the Spotify API, allowing users to seamlessly manage their playlists and explore music. The primary goal is to provide an interactive, user-friendly interface that enhances the music experience by integrating playlist management, discovery, and playback into one seamless app.",
 			},
 			{ type: "heading", content: "Features" },
 			{
@@ -117,6 +117,10 @@ export const ProjectsData: Project[] = [
 					"Personalized Recommendations: Get suggested playlists based on favorite genres.",
 			},
 			{
+				type: "heading",
+				content: "Snapshots of the project (click to enlarge)",
+			},
+			{
 				type: "image-gallery",
 				content: "Snapshots of the project (click to enlarge)",
 				images: [
@@ -148,12 +152,60 @@ export const ProjectsData: Project[] = [
 	// Project 3: Using string array (for backwards compatibility)
 	{
 		title: "e-store",
-		tag: ["Web Development", "SEO"],
-		technologies: ["JavaScript", "TypeScript", "React"],
-		image:
-			"https://images.unsplash.com/photo-1730121108301-65fe6cefb48d?q=80&w=3263&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		tag: ["Web Dev", "Web Design", "API", "Webpack"],
+		technologies: ["JavaScript", "HTML", "CSS", "API", "Local Storage"],
+		image: "/images/projectImg/jasmizImg/jasmizIndex.jpg",
 		previewLink: "https://maybejod.github.io/e-store/",
 		githubLink: "https://github.com/MaybeJod/e-store",
-		description: ["lorem 12", "lorem 21"],
+		description: createDescription([
+			{ type: "heading", content: "Description" },
+			{
+				type: "paragraph",
+				content:
+					"The Brief: A small business is seeking to establish a simple, responsive, user-friendly e-commerce website to facilitate the online sale of a curated selection of products. The primary goal is to create a clean and intuitive platform where customers can easily browse through the available products, filter by category, and complete their purchases without difficulty.",
+			},
+			{ type: "heading", content: "Features" },
+			{
+				type: "list-item",
+				content:
+					"Product Listing: A dedicated page will showcase the business's product offerings. Each product listing will provide the product title, a description, the price, and an accompanying image. The products are returned from the Fake Store API.",
+			},
+			{
+				type: "list-item",
+				content:
+					"Filters: Customers will be able to filter products by categories such as clothing and accessories, which is also returned from the Fake Store API",
+			},
+			{
+				type: "list-item",
+				content:
+					"Shopping Cart: A shopping cart where users can add selected items, review the contents of their cart, and view the total cost of their purchases. The site will automatically calculate the total price of the items in the cart",
+			},
+			{
+				type: "list-item",
+				content:
+					"Checkout: A simple and intuitive form will be provided for customers to submit their purchases. While this version will not be integrated with real payment systems, it will serve as a placeholder to demonstrate the flow of the checkout process",
+			},
+			{
+				type: "image-gallery",
+				content: "Snapshots of the project (click to enlarge)",
+				images: [
+					{
+						url: "/images/projectImg/jasmizImg/jasmizIndex.jpg",
+						alt: "home",
+						caption: "Landing page",
+					},
+					{
+						url: "/images/projectImg/jasmizImg/JasmizCategory.jpeg",
+						alt: "Item grid of womens clothes",
+						caption: "Item grid of womens clothes",
+					},
+					{
+						url: "/images/projectImg/jasmizImg/JasmizCart.jpeg",
+						alt: "Checkout",
+						caption: "Checkout page",
+					},
+				],
+			},
+		]),
 	},
 ];
