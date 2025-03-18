@@ -9,16 +9,22 @@ export default function WorkedWithFor() {
 		<section className="worked-with-section-wrapper">
 			<h2 className="worked-with-for-title">WORKED WITH/FOR</h2>
 			<div className="worked-with-for-svgs-wrapper">
-				<a href="https://iongamedesign.com/">
+				<a
+					href="https://iongamedesign.com/"
+					aria-label="read more about Ion game design">
 					<IonGameDesign />
 				</a>
-				<a href="https://flemingsbergscience.se/en/start_en/">
+				<a
+					href="https://flemingsbergscience.se/en/start_en/"
+					aria-label="read more about Flemingsberg science">
 					<FsLogoSvg />
 				</a>
-				<a href="https://mediprep.se/">
+				<a href="https://mediprep.se/" aria-label="read more about Mediprep">
 					<MediPrepLogo />
 				</a>
-				<a href="https://www.sh.se/">
+				<a
+					href="https://www.sh.se/"
+					aria-label="read more about Sodertorn university">
 					<SodertornUniversityLogo />
 				</a>
 			</div>
