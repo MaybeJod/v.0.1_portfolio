@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function getSthlmTime() {
 	const timeOptions: Intl.DateTimeFormatOptions = {
@@ -66,6 +67,9 @@ export default function Footer() {
 								<a href="#contact" onClick={handleScrollTo("contact")}>
 									Contact
 								</a>
+							</li>
+							<li>
+								<Link to="/summary">Summary</Link>
 							</li>
 						</ul>
 					</div>
