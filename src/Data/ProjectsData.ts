@@ -206,7 +206,7 @@ export const ProjectsData: Project[] = [
 	{
 		title: "High Frontier Mobile game UX Design",
 		tag: ["Game Dev", "UX", "User Research", "Figma", "Prototyping"],
-		technologies: ["UX", "UI", "Figma", "Unity", ""],
+		technologies: ["UX", "UI", "Figma", "Unity"],
 		image: "/images/projectImg/hf4all/hfCover.jpg",
 		previewLink:
 			"https://iongamedesign.com/pages/high-frontier-4-all-digital-version",

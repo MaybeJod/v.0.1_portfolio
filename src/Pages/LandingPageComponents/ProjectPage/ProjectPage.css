@@ -200,7 +200,8 @@
 	margin-bottom: 2rem;
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
 }
 
 .project-hero-image img {
@@ -340,10 +341,21 @@
 	.project-header h1 {
 		font-size: 2.5rem;
 	}
+	.project-hero-image {
+		width: 100%;
+		margin-bottom: 2rem;
+		border-radius: 8px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+	}
 
-	.project-image {
-		width: 70%;
-		margin: 0 auto;
+	.project-hero-image img {
+		width: 50%;
+		height: auto;
+		display: block;
+		cursor: pointer;
+		transition: transform 0.3s ease;
 	}
 
 	.project-links-container {
