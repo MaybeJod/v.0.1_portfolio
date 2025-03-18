@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import CalEmbed from "../../Components/CalEmbed/CalEmbed";
 
 export default function Contact() {
 	const [currentTime, setCurrentTime] = useState(getCurrentTime());
@@ -32,6 +33,7 @@ export default function Contact() {
 				<p className="read">
 					Read <span id="currentTime">{currentTime}</span>
 				</p>
+				<CalEmbed />
 			</div>
 		</section>
 	);
