@@ -74,42 +74,145 @@ const ProjectDetailsPage: React.FC = () => {
 		</div>
 	);
 
-	const renderDescriptionItem = (item: DescriptionItem, index: number) => {
-		switch (item.type) {
-			case "heading":
-				return (
-					<h3 key={index} className="description-heading">
-						{item.content}
-					</h3>
-				);
-			case "paragraph":
-				return (
-					<p key={index} className="description-paragraph">
-						{item.content}
-					</p>
-				);
-			case "list-item":
-			case "sub-list-item":
-				return (
-					<li
-						key={index}
-						className={`description-${item.type} ${
-							item.type === "sub-list-item" ? "indented" : ""
-						}`}>
-						{item.content}
-					</li>
-				);
-			case "image":
-				return item.imageUrl
-					? renderImage(item.imageUrl, item.content, undefined, item.alignment)
-					: null;
-			case "image-gallery":
-				return item.images ? (
-					<div key={index}>{renderGallery(item.images)}</div>
-				) : null;
-			default:
-				return <p key={index}>{item.content}</p>;
+	// Function to process description items and group list items
+	const processDescriptionItems = (items: (DescriptionItem | string)[]) => {
+		const processedItems: React.ReactNode[] = [];
+		let currentListItems: React.ReactNode[] = [];
+		let isProcessingList = false;
+
+		items.forEach((item, index) => {
+			// Handle string items
+			if (typeof item === "string") {
+				// If we were processing a list, finish it first
+				if (isProcessingList && currentListItems.length > 0) {
+					processedItems.push(
+						<ul key={`list-${index}`}>{currentListItems}</ul>
+					);
+					currentListItems = [];
+					isProcessingList = false;
+				}
+
+				processedItems.push(<p key={index}>{item}</p>);
+				return;
+			}
+
+			// Handle DescriptionItem objects
+			switch (item.type) {
+				case "heading":
+					// If we were processing a list, finish it first
+					if (isProcessingList && currentListItems.length > 0) {
+						processedItems.push(
+							<ul key={`list-${index}`}>{currentListItems}</ul>
+						);
+						currentListItems = [];
+						isProcessingList = false;
+					}
+
+					processedItems.push(
+						<h2 key={index} className="description-heading">
+							{item.content}
+						</h2>
+					);
+					break;
+
+				case "paragraph":
+					// If we were processing a list, finish it first
+					if (isProcessingList && currentListItems.length > 0) {
+						processedItems.push(
+							<ul key={`list-${index}`}>{currentListItems}</ul>
+						);
+						currentListItems = [];
+						isProcessingList = false;
+					}
+
+					processedItems.push(
+						<p key={index} className="description-paragraph">
+							{item.content}
+						</p>
+					);
+					break;
+
+				case "list-item":
+					isProcessingList = true;
+					currentListItems.push(
+						<li key={`list-item-${index}`} className="description-list-item">
+							{item.content}
+						</li>
+					);
+					break;
+
+				case "sub-list-item":
+					isProcessingList = true;
+					currentListItems.push(
+						<li
+							key={`sub-list-item-${index}`}
+							className="description-sub-list-item indented">
+							{item.content}
+						</li>
+					);
+					break;
+
+				case "image":
+					// If we were processing a list, finish it first
+					if (isProcessingList && currentListItems.length > 0) {
+						processedItems.push(
+							<ul key={`list-${index}`}>{currentListItems}</ul>
+						);
+						currentListItems = [];
+						isProcessingList = false;
+					}
+
+					if (item.imageUrl) {
+						processedItems.push(
+							<div key={index}>
+								{renderImage(
+									item.imageUrl,
+									item.content,
+									undefined,
+									item.alignment
+								)}
+							</div>
+						);
+					}
+					break;
+
+				case "image-gallery":
+					// If we were processing a list, finish it first
+					if (isProcessingList && currentListItems.length > 0) {
+						processedItems.push(
+							<ul key={`list-${index}`}>{currentListItems}</ul>
+						);
+						currentListItems = [];
+						isProcessingList = false;
+					}
+
+					if (item.images) {
+						processedItems.push(
+							<div key={index}>{renderGallery(item.images)}</div>
+						);
+					}
+					break;
+
+				default:
+					// If we were processing a list, finish it first
+					if (isProcessingList && currentListItems.length > 0) {
+						processedItems.push(
+							<ul key={`list-${index}`}>{currentListItems}</ul>
+						);
+						currentListItems = [];
+						isProcessingList = false;
+					}
+
+					processedItems.push(<p key={index}>{item.content}</p>);
+			}
+		});
+
+		// If we have any remaining list items, add them
+		if (currentListItems.length > 0) {
+			processedItems.push(<ul key="final-list">{currentListItems}</ul>);
 		}
+
+		return processedItems;
 	};
 
 	const renderDescription = () => {
@@ -120,13 +223,7 @@ const ProjectDetailsPage: React.FC = () => {
 		if (Array.isArray(project.description)) {
 			return (
 				<div className="project-description">
-					{project.description.map((item, index) =>
-						typeof item === "string" ? (
-							<p key={index}>{item}</p>
-						) : (
-							renderDescriptionItem(item, index)
-						)
-					)}
+					{processDescriptionItems(project.description)}
 				</div>
 			);
 		}
@@ -156,7 +253,7 @@ const ProjectDetailsPage: React.FC = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="external-link-button">
-						View Live
+						Live URL
 					</a>
 				)}
 				{project.githubLink && (

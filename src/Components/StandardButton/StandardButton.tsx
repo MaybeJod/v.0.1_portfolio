@@ -1,20 +1,21 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, ButtonHTMLAttributes } from "react";
 import "./StandardButton.css";
 
-interface ButtonInterface {
+interface ButtonInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
 	onClick: MouseEventHandler<HTMLButtonElement>;
 	children: string;
-	className: string;
-	ariaLabel: string;
-	tabIndex: number;
+	className?: string;
+	ariaLabel?: string;
+	tabIndex?: number;
 }
 
 export default function StandardButton({
 	onClick,
 	children,
-	className,
+	className = "",
 	ariaLabel = "",
-	tabIndex,
+	tabIndex = 0,
+	...rest
 }: ButtonInterface) {
 	return (
 		<div className="standard-button-wrapper">
@@ -23,7 +24,8 @@ export default function StandardButton({
 				type="button"
 				onClick={onClick}
 				aria-label={ariaLabel}
-				tabIndex={tabIndex}>
+				tabIndex={tabIndex}
+				{...rest}>
 				{children}
 			</button>
 		</div>

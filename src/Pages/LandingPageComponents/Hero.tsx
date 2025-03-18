@@ -1,3 +1,5 @@
+import CalEmbed from "../../Components/CalEmbed/CalEmbed";
+
 export default function Hero() {
 	return (
 		<section id="hero">
@@ -11,6 +13,7 @@ export default function Hero() {
 						id="heroImg"
 					/>
 				</div>
+				<CalEmbed />
 			</div>
 		</section>
 	);
