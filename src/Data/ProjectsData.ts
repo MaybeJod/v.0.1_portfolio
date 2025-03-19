@@ -107,6 +107,11 @@ export const ProjectsData: Project[] = [
 			},
 			{
 				type: "heading",
+				content:
+					"The application requires you to be whitelisted to log in, contact me (please) to get a live demo.",
+			},
+			{
+				type: "heading",
 				content: "Snapshots of the project (click to enlarge)",
 			},
 			{
