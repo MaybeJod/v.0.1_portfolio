@@ -148,7 +148,7 @@ export const ProjectsData: Project[] = [
 		title: "Jasmiz e-store",
 		tag: ["Web Dev", "Web Design", "API", "Webpack"],
 		technologies: ["JavaScript", "HTML", "CSS", "API", "Local Storage"],
-		image: "/images/projectImg/jasmizImg/jasmizIndex.jpg",
+		image: "/images/projectImg/jasmizImg/jasmizLogo.jpg",
 		previewLink: "https://maybejod.github.io/e-store/",
 		githubLink: "https://github.com/MaybeJod/e-store",
 		description: createDescription([
