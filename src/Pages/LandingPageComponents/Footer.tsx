@@ -58,11 +58,11 @@ export default function Footer() {
 									About
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<a href="#testimonial" onClick={handleScrollTo("testimonial")}>
 									Testimonial
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a href="#contact" onClick={handleScrollTo("contact")}>
 									Contact
@@ -78,13 +78,15 @@ export default function Footer() {
 						<hr />
 						<ul>
 							<li>
-								<a href="https://www.google.com/">Linkedin</a>
+								<a href="https://www.linkedin.com/in/kiattisak-jod-wongphayak/">
+									Linkedin
+								</a>
 							</li>
 							<li>
-								<a href="https://www.google.com/">Github</a>
+								<a href="https://github.com/maybejod/">Github</a>
 							</li>
 							<li>
-								<a href="https://www.google.com/">Instagram</a>
+								<a href="https://www.instagram.com/intejod">Instagram</a>
 							</li>
 						</ul>
 					</div>

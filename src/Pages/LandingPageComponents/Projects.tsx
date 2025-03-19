@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
 					href="https://github.com/MaybeJod"
 					className="more-project-link"
 					target="_blank">
-					More project at github
+					More projects on github
 				</a>
 			</div>
 		</section>
