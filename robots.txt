@@ -1,0 +1,12 @@
+# Last updated: April 1, 2025
+
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+
+# Optional: Crawl-delay directive (some bots respect this)
+# Crawl-delay: 10
+
+# Point to your sitemap (replace with your actual URL)
+Sitemap: https://jodw.se/sitemap.xml
