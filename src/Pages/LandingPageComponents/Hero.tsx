@@ -1,4 +1,5 @@
 import CalEmbed from "../../Components/CalEmbed/CalEmbed";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
 	return (
@@ -13,7 +14,19 @@ export default function Hero() {
 						id="heroImg"
 					/>
 				</div>
-				<CalEmbed />
+				<div className="looking-for-lia">
+					<svg height="100" width="100" className="blinking">
+						<circle cx="70" cy="50" r="10" />
+						Sorry, your browser does not support inline SVG.
+					</svg>
+					<p>Currently looking for front end developer LIA/Internship : )</p>
+				</div>
+				<div className="hero-buttons-section">
+					<CalEmbed />
+					<Link className="tldr-button " to="/summary">
+						TLDR;
+					</Link>
+				</div>
 			</div>
 		</section>
 	);

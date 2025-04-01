@@ -36,7 +36,7 @@ export default function NavBar() {
 								</li>
 							))}
 							<li>
-								<Link to="/summary">Summary</Link>
+								<Link to="/summary">TLDR</Link>
 							</li>
 						</>
 					) : (
