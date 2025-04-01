@@ -440,13 +440,8 @@ nav {
 				/* width: 30rem; */
 				border-right: 20px solid #1f61eb;
 				border-bottom-right-radius: 4px 3px;
-
-				a {
-					text-decoration: none;
-					color: var(--main-white);
-				}
 			}
-			.cta-button:hover a {
+			.cta-button:hover span {
 				display: none;
 			}
 			.cta-button:hover:before {
@@ -943,13 +938,8 @@ footer {
 					/* width: 10%; */
 					border-right: 20px solid #1f61eb;
 					border-bottom-right-radius: 4px 3px;
-
-					a {
-						text-decoration: none;
-						color: var(--main-white);
-					}
 				}
-				.cta-button:hover a {
+				.cta-button:hover span {
 					display: none;
 				}
 

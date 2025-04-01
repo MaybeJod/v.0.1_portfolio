@@ -28,9 +28,7 @@ export default function Contact() {
 			<div className="page-container">
 				<h2 className="contact-heading">Let's build some banger stuff</h2>
 				<button className="cta-button">
-					{/* <span>can i have a job?</span> */}
-
-					<a href="mailto:jodwongphayak@gmail.com">can i have a job?</a>
+					<span>can i have a job?</span>
 				</button>
 				<p className="read">
 					Read <span id="currentTime">{currentTime}</span>
